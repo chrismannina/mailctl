@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-InboxZero - AI Email Assistant CLI
+mailctl - Minimal CLI for email control
 
 SETUP INSTRUCTIONS:
 ==================
@@ -25,7 +25,7 @@ OUTLOOK SETUP:
    - Go to https://portal.azure.com/
    - Navigate to Azure Active Directory > App registrations
    - Click "New registration"
-   - Name: "InboxZero CLI"
+   - Name: "mailctl"
    - Supported account types: "Personal Microsoft accounts only"
    - Redirect URI: "Public client/native" with "http://localhost:8080"
    - After creation, note the "Application (client) ID"
@@ -45,7 +45,7 @@ OUTLOOK SETUP:
    pip install -r requirements.txt
 
 5. Run the application:
-   python inboxzero.py
+   python mailctl.py
 """
 
 import json
@@ -595,8 +595,8 @@ def process_emails(provider: str, service_or_token: Any, emails: List[Dict]):
 def main():
     """Main application loop."""
     console.print(Panel.fit(
-        "[bold blue]InboxZero - AI Email Assistant[/bold blue]\n"
-        "Intelligently manage your Gmail and Outlook inbox with AI assistance",
+        "[bold blue]mailctl[/bold blue]\n"
+        "Minimal CLI for email control powered by AI",
         title="Welcome"
     ))
     

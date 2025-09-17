@@ -1,6 +1,6 @@
-# InboxZero - AI Email Assistant CLI
+# mailctl
 
-An intelligent command-line tool that helps you achieve inbox zero using Claude AI. Process Gmail and Outlook emails with smart categorization and automated action suggestions.
+A minimal CLI for email control powered by AI. Process Gmail and Outlook emails with smart categorization and automated actions.
 
 ## Features
 
@@ -29,7 +29,7 @@ An intelligent command-line tool that helps you achieve inbox zero using Claude 
 
 4. **Run the application**:
    ```bash
-   python inboxzero.py
+   python mailctl.py
    ```
 
 ## Email Categories
