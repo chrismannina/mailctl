@@ -1,0 +1,144 @@
+/* CSS for mailctl TUI application */
+
+/* Main layout */
+#main-container {
+    height: 100%;
+}
+
+.email-list-panel {
+    width: 35%;
+    border: solid $primary;
+    padding: 1;
+}
+
+.email-preview-panel {
+    width: 45%;
+    border: solid $secondary;
+    padding: 1;
+    margin-left: 1;
+}
+
+.action-panel {
+    width: 20%;
+    border: solid $success;
+    padding: 1;
+    margin-left: 1;
+}
+
+/* Panel titles */
+.panel-title {
+    text-style: bold;
+    background: $primary;
+    color: $text;
+    padding: 0 1;
+    margin-bottom: 1;
+    text-align: center;
+}
+
+/* Email items */
+.email-item {
+    padding: 0 1;
+    margin-bottom: 1;
+}
+
+.category-important {
+    background: $error 20%;
+    border-left: thick $error;
+}
+
+.category-newsletter {
+    background: $info 20%;
+    border-left: thick $info;
+}
+
+.category-promotion {
+    background: $warning 20%;
+    border-left: thick $warning;
+}
+
+.category-transactional {
+    background: $success 20%;
+    border-left: thick $success;
+}
+
+.category-spam {
+    background: $error 40%;
+    border-left: thick $error;
+}
+
+.category-taskrequest {
+    background: $accent 20%;
+    border-left: thick $accent;
+}
+
+/* Email preview */
+EmailPreview {
+    background: $surface;
+    border: round $primary;
+    padding: 1;
+}
+
+/* Action buttons */
+ActionPanel Button {
+    width: 100%;
+    margin-bottom: 1;
+}
+
+/* Draft modal */
+.draft-modal {
+    align: center middle;
+    width: 80%;
+    height: 80%;
+    background: $surface;
+    border: thick $primary;
+    padding: 2;
+}
+
+.draft-title {
+    text-style: bold;
+    text-align: center;
+    margin-bottom: 1;
+}
+
+.draft-subject {
+    margin-bottom: 1;
+}
+
+.draft-body {
+    height: 70%;
+    margin-bottom: 2;
+}
+
+.draft-buttons {
+    height: auto;
+    align: center middle;
+}
+
+.draft-buttons Button {
+    margin: 0 1;
+}
+
+/* Progress bar */
+#load-progress {
+    margin-top: 1;
+    height: 1;
+}
+
+/* List view selections */
+ListView:focus > .email-item {
+    background: $primary 50%;
+}
+
+ListView > .email-item:hover {
+    background: $primary 30%;
+}
+
+/* Footer styling */
+Footer {
+    background: $primary;
+}
+
+/* Header styling */
+Header {
+    background: $primary;
+}
